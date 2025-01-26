@@ -27,5 +27,5 @@
   }
 
   // Llamar a la función cuando cargue la página
-  document.addEventListener("DOMContentLoaded", updatePageData);
+  document.addEventListener("DOMContentLoaded", updatePage);
 
