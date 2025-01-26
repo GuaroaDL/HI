@@ -1,4 +1,7 @@
-  function URLParametro() {
+
+
+  // Función para obtener los parámetros del URL
+  function getURLParams() {
     const params = new URLSearchParams(window.location.search);
     return {
       codigo: params.get("codigo"),
@@ -13,8 +16,9 @@
     };
   }
 
-  function updatePage() {
-    const params = URLParametro();
+  // Función para actualizar los datos de la página
+  function updatePageData() {
+    const params = getURLParams();
     if (params.codigo) document.getElementById("codigo").textContent = params.codigo;
     if (params.placa) document.getElementById("placa").textContent = params.placa;
     if (params.tipo) document.getElementById("tipo").textContent = params.tipo;
@@ -27,5 +31,5 @@
   }
 
   // Llamar a la función cuando cargue la página
-  document.addEventListener("DOMContentLoaded", updatePage);
+  document.addEventListener("DOMContentLoaded", updatePageData);
 
