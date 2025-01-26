@@ -1,47 +1,51 @@
-html{
-    width: 100%;
-    height: 100%;
+/* Estilos generales */
+html {
+    width: auto;
+    height: auto;
 }
+
 body {
     background-color: #ffff;
     display: block;
     margin: 8px;
 }
 
-
 header {
     background-color: #7daf18;
     padding: 5%;
     border-bottom: 1em solid #2d2d2d;
 }
-.img{
+
+.img {
     height: 49px;
+    width: auto; 
 }
 
-.titulo{
+.titulo {
     padding: 5%;
 }
+
 .h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #de9900;
     display: block;
     font-weight: bold;
     margin: 0px;
 }
-.h2{
+
+.h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     color: #4b8101;
     display: block;
     margin: 0px;
 }
 
-
 main {
     padding: 0 5% 5% 5%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 table {
@@ -55,6 +59,7 @@ table tr {
 
 table td {
     padding: 0.8em;
+    font-size: 1em; 
 }
 
 table td:first-child {
@@ -72,7 +77,63 @@ table td:last-child {
 footer {
     padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
+    font-size: 1em;
     background-color: #cfcfcf;
     color: #3a3a3a;
+}
+
+
+@media (max-width: 768px) {
+   
+
+    .titulo {
+        padding: 3%;
+    }
+
+    .h1 {
+        font-size: 2em;
+    }
+
+    .h2 {
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 3%;
+    }
+
+    table td {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        border-bottom-width: 5px;
+        margin: 3 3 3 3px;
+    }
+
+    .img {
+        height: 20px;
+    }
+
+    .h1 {
+        font-size: 1.5em;
+    }
+
+    .h2 {
+        font-size: 28.1515px;
+    }
+
+    table td {
+        font-size: 0.8em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
 }
